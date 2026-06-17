@@ -12,6 +12,26 @@ function login(){
         localStorage.setItem("usuario", JSON.stringify(user))
         window.location.href = "../Loja"
 
+    }else{
+        document.getElementById("error-modal").style.display = "flex"
+        document.getElementById("nome").style.borderBottom = "3px solid rgba(239, 108, 128, 0.832)"
     }
+}
+function showPassword(){
+    var inputSenha = document.querySelector('#senha')
+    var img_eye = document.querySelector('eye')
 
+    if(inputSenha.getAttribute("type") === "password"){
+        inputSenha.setAttribute("type", "text")
+        img_eye.setAttribute("src", "../../public/hide.png")
+    }else{
+        inputSenha.setAttribute("type", "password")
+        img_eye.setAttribute("src", "../../public/view.png")
+    }    
+}
+
+function fecharError(){
+    document.getElementById("error-modal").style.display = "none"
+    document.getElementById("nome").style.borderBottom = "2px solid #090909"
+    document.getElementById("senha").style.borderBottom = "2px solid #090909"
 }
