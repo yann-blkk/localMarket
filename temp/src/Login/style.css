@@ -67,7 +67,7 @@ body{
 }
 
 .logo{
-    width: 200px;
+    width: 110px;
     height: 100px;
 }
 
@@ -124,7 +124,7 @@ input:focus{
     background-color: var(--vermelho_escuro);
     font-size: 20px;
     border: none;
-    /*margin-top: 20px;*/
+    margin-top: 20px;
     color: var(--texto);
     border: 2px solid var(--texto);
     border-radius: 5px;
@@ -138,6 +138,7 @@ input:focus{
 
 .round{
     transform: translateY(50px);
-    background-color: #ffffff;
+    background-color: var(--vermelho_medio);
     border-radius: 100%;
+    border: 2px solid var(--texto);
 }

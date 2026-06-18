@@ -3,20 +3,20 @@
         "id": 1,
         "desc": "Jameson Whisky",
         "imagem": "../../public/sahur.png",
-        "valor": 600.00
+        "valor": 99.99
     },
 
     {
         "id": 2,
         "desc": "Absolute Vodka",
         "imagem": "../../public/sahur2.png",
-        "valor": 1000.00
+        "valor": 79.99
     },
 
     {
         "id": 3,
         "desc": "Bacardi Rum",
         "imagem": "../../public/sahur3.png",
-        "valor": 1200.00
+        "valor": 89.99
     }
 ]
