@@ -6,5 +6,18 @@ $(document).ready(function(){
     function exibirCarrinho(){
         listElement.empty()
         let totalPreco = 0
+
+        $.each(carrinho, function(index, item){
+            const listItem = $("<li>").text(`${item.desc} - Preço: $${item.preco.toFixed(2)}`)
+
+            const removeButton = $("<button>").text("❌").css("margin-left", "10px").click(function(){
+                removerItem(index)
+            })
+            //appends filhos aqui
+        })
     }
+    //funcao de removerItem
 })
+//gerar word
+
+//success close

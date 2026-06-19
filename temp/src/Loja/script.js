@@ -52,7 +52,8 @@ document.getElementById("produtos-container").addEventListener("click", function
 
     const indexDoProduto = btn.dataset.indice
     const produtoSelecionado = produtos[indexDoProduto]
-
-    let carrinho = JSON.parse(localStorage.getItem("carrinho"))|| []
-    
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+    carrinho.push(produtoSelecionado)
+    localStorage.setItem("carrinho", JSON.stringify(carrinho))
+    alert("Produto adicionado com sucesso!!!")
 })

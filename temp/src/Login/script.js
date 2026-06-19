@@ -15,11 +15,12 @@ function login(){
     }else{
         document.getElementById("error-modal").style.display = "flex"
         document.getElementById("nome").style.borderBottom = "3px solid rgba(239, 108, 128, 0.832)"
+        document.getElementById("senha").style.borderBottom = "3px solid rgba(239, 108, 128, 0.832)"
     }
 }
 function showPassword(){
     var inputSenha = document.querySelector('#senha')
-    var img_eye = document.querySelector('eye')
+    var img_eye = document.querySelector('#eye')
 
     if(inputSenha.getAttribute("type") === "password"){
         inputSenha.setAttribute("type", "text")
