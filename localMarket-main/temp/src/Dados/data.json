@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "desc": "Jameson Whisky",
+        "imagem": "../../public/sahur.png",
+        "valor": 99.99
+    },
+
+    {
+        "id": 2,
+        "desc": "Absolute Vodka",
+        "imagem": "../../public/sahur2.png",
+        "valor": 79.99
+    },
+
+    {
+        "id": 3,
+        "desc": "Bacardi Rum",
+        "imagem": "../../public/sahur3.png",
+        "valor": 89.99
+    }
+]
