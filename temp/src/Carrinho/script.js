@@ -13,11 +13,21 @@ $(document).ready(function(){
             const removeButton = $("<button>").text("❌").css("margin-left", "10px").click(function(){
                 removerItem(index)
             })
-            //appends filhos aqui
-        })
-    }
-    //funcao de removerItem
-})
-//gerar word
 
-//success close
+            listItem.append(removeButton)
+            listElement.append(listItem)
+
+            totalPreco += item.preco
+        })
+        totalElement.text(`Total: $${totalPreco.toFixed(2)}`)
+    }
+
+    function removerItem(index){
+        carrinho.splice(index, 1)
+        localStorage.setItem("carrinho", JSON.stringify(carrinho))
+        exibirCarrinho()
+    }
+    
+})
+
+
