@@ -40,4 +40,10 @@ body{
 
 .card-body{
     background-color: var(--vermelho_medio);
+    color: white;
+}
+
+.header{
+    background-color: var(--vermelho_medio);
+    color: white;
 }
